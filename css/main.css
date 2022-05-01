@@ -1049,11 +1049,11 @@ img {
   font-size: 10px;
   line-height: 12px;
   color: #F43030;
+  display: none;
   margin: 0;
   position: absolute;
   top: 160px;
   left: 0;
-  display: none;
 }
 
 .site-form__valid {
@@ -1066,6 +1066,14 @@ img {
   top: 160px;
   left: 0;
   display: none;
+}
+
+.site-form__email:not(:focus):not(:placeholder-shown):valid {
+  border: 1px solid #5FB4A2;
+}
+
+.site-form__email:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid #F43030;
 }
 
 .site-form__email:not(:focus):not(:placeholder-shown):invalid ~ .site-form__error {
