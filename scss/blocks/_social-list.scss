@@ -1,0 +1,13 @@
+
+.social__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include list-unstyled
+}
+.social__item:not(:last-child) {
+    margin-right: 15px;
+}
+.social__link:hover path {
+ fill: rgb(225, 226, 142);
+}

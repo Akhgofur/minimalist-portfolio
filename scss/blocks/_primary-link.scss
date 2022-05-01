@@ -1,0 +1,16 @@
+.primary-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-grayish-dark-blue;
+    padding: 17px 33px;
+    border: 1px solid $color-grayish-dark-blue;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $color-grayish-dark-blue;
+        color: #fff;
+    }
+}

@@ -1,0 +1,27 @@
+.nav-toggler {
+    border: none;
+    background-color: transparent;
+}
+.nav-toggler__line {
+    width: 24px;
+    height: 1px;
+    background-color: $color-grayish-dark-blue;
+    display: block;
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+.nav-toggler--open {
+    .nav-toggler__line--top {
+        transform: translateY(3px) rotate(45deg);
+    }
+    .nav-toggler__line--center {
+        display: none;
+    }
+    .nav-toggler__line--bottom {
+        transform: translateY(-3px) rotate(-45deg);
+    }
+    .nav-toggler__line {
+        transition: all 0.5s ease;
+    }
+}

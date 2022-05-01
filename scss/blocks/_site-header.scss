@@ -1,0 +1,16 @@
+.site-header {
+    position: relative;
+    padding-top: 64px;
+    padding-bottom: 54px;
+}
+.site-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@include breakpoint-down(600px) {
+    .site-header {
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+}

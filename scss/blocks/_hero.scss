@@ -1,0 +1,95 @@
+@include cssretina {
+    .hero__container {
+        background-image: url(../../img/hero-bgi2x.jpg);
+    }
+}
+.hero {
+    padding-top: 243px;
+    position: relative;
+    background-image: url(../../img/hero-bgi1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero__content {
+    max-width: 445px;
+    width: 100%;
+    padding-top: 55px;
+    padding-right: 55px;
+    text-align: left;
+    z-index: 3;
+    background-color: $color-very-light-grey;
+}
+.hero__desc {
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.446429px;
+    margin-top: 0;
+    margin-bottom: 53px;
+    color: $color-grayish-dark-blue;
+}
+.hero__link {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 17px 28px;
+    padding-left: 76px;
+    color: #fff;
+    background-color: $color-dark-blue;
+    display: inline-block;
+    position: relative;
+    &::before {
+        content: '';
+        background-image: url(../../img/link-arroww.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        padding: 24px;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        background-color: $color-grayish-dark-blue
+    }
+    &:hover {
+        background-color: $color-slightly-desaturated-cyan;
+        &::before {
+            background-color: #519788;
+        }
+    }
+}
+@include breakpoint-down(850px) {
+    .hero {
+        padding-top: 322px;
+        background-image: url(../../img/hero-bgi-max850px.jpg);
+    }
+    .hero__content {
+        max-width: 515px;
+    }
+}
+@include breakpoint-down(600px) {
+    .hero {
+        padding-top: 295px;
+        background-size: contain;
+        background-position: top;
+    }
+    .hero__content {
+        padding-top: 24px;
+    }
+    .hero__desc {
+        font-size: 40px;
+        line-height: 42px;
+    }
+}
+@include breakpoint-down(330px) {
+    .hero {
+        padding-top: 250px;
+    }
+    .hero__content {
+        max-width: 100%;
+        padding: 0;
+    }
+}

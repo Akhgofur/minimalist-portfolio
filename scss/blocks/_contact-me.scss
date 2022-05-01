@@ -1,0 +1,25 @@
+.contact-me {
+    padding-bottom: 109px;
+}
+.contact-me__container {
+    padding-top: 48px;
+    border-top: 1px solid $color-grayish-dark-blue;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me__heading {
+    font-family: 'Ibarra Real Nova';
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+}
+@include breakpoint-down(850px) {
+    .contact-me__container {
+        flex-direction: column;
+    }
+    .contact-me__heading {
+        margin-bottom: 32px;
+    }
+}
