@@ -55,10 +55,13 @@
     <section id="2323" class="about">
       <div class="container about__container">
         <picture class="about__img">
-          <source media="(min-width:850px)" srcset="img/about8501x.jpg" width="540" height="600">
-          <source media="(max-width:850px, min-width:600px)" srcset="img/about1x.jpg" width="281" height="600">
-          <source media="(max-width:600px)" srcset="img/about600.jpg">
-          <img class="about__img" src="img/about1x.jpg" alt="" width="540" height="600">
+          <source media="(min-width:850px)" srcset="img/about8501x.webp" type="image/webp">
+          <source media="(min-width:850px)" srcset="img/about8501x.jpg" type="image/jpg">
+          <source media="(min-width:600px,max-width:850px)" srcset="img/about1x.webp" type="image/webp">
+          <source media="(min-width:600px,max-width:850px)" srcset="img/about1x.jpg" type="image/jpg">
+          <source media="(max-width:600px)" srcset="img/about600.webp" type="image/webp">
+          <source media="(max-width:600px)" srcset="img/about600.jpg" type="image/jpg">
+          <img src="img/about1x.jpg" alt="" width="540" height="600">
         </picture>
         <div class="about__content">
           <h2 class="about__heading">About Me</h2>
@@ -121,6 +124,6 @@
       </ul>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
-<script src="js/main.js"></script>
 </html>
