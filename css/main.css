@@ -1085,6 +1085,7 @@ img {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .site-form__email:not(:focus):not(:placeholder-shown):invalid ~ .site-form__error {
